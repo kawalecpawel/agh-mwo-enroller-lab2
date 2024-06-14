@@ -31,7 +31,7 @@ public class MeetingRestController {
         return new ResponseEntity<Meeting>(meeting, HttpStatus.OK);
     }
 
-    /*@RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = RequestMethod.POST)
     public ResponseEntity<?> addMeeting(@RequestBody Meeting meeting) {
         if (meetingService.findById(meeting.getId()) != null) {
             return new ResponseEntity<String>(
@@ -40,6 +40,6 @@ public class MeetingRestController {
         }
         meetingService.add(meeting);
         return new ResponseEntity<Meeting>(meeting, HttpStatus.CREATED);
-    }*/
+    }
 
 }

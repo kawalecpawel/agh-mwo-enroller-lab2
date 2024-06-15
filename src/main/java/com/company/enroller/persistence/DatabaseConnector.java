@@ -1,7 +1,9 @@
 package com.company.enroller.persistence;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DatabaseConnector {
 
 	protected static DatabaseConnector instance = null;
